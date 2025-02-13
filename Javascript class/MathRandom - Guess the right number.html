@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the number</title>
+  </head>
+  <body>
+    <h1>Guess the number from 1 to 10</h1>
+    <input id="guessNumber" type="number" />
+    <button onclick="check()">Check</button>
+    <h4 id="result">Results:</h4>
+    <p id="score">Score: 10</p>
+
+    <script>
+      var displayResult = document.getElementById("result");
+      var displayScore = document.getElementById("score");
+      var randomNumber = Math.floor(Math.random() * 10) + 1;
+      var totalScore = 10;
+
+      function check() {
+        var enteredNumber = document.getElementById("guessNumber").value;
+
+        if (enteredNumber == randomNumber) {
+          displayResult.textContent =
+            "Right! The number was " + randomNumber + " 🤗";
+        } else {
+          totalScore = totalScore - 1; // Reduce score by 1 if wrong
+          displayResult.textContent = "Wrong! Try again. 👋";
+          displayScore.textContent = "Score: " + totalScore; // Update score in the DOM
+        }
+      }
+    </script>
+  </body>
+</html>
