@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiplication Calculator</title>
+  </head>
+  <body>
+    <h2>Multiplication Calculator</h2>
+
+    <!-- Input Fields -->
+    <input id="num1" type="number" placeholder="Enter first number" />
+    <input id="num2" type="number" placeholder="Enter second number" />
+
+    <!-- Buttons -->
+    <button onclick="multiplyNumbers()">Multiply</button>
+    <button onclick="clearFields()">Clear</button>
+
+    <!-- Result Display -->
+    <p id="result">Result:</p>
+
+    <script>
+      function multiplyNumbers() {
+        // Get input values
+        var box1 = document.getElementById("num1").value;
+        var box2 = document.getElementById("num2").value;
+
+        // Convert input values to numbers
+        var box1Value = Number(box1);
+        var box2Value = Number(box2);
+
+        // Multiply values
+        var total = box1Value * box2Value;
+
+        // Display result
+        document.getElementById("result").textContent = "Result: " + total;
+      }
+
+      function clearFields() {
+        document.getElementById("num1").value = "";
+        document.getElementById("num2").value = "";
+        document.getElementById("result").textContent = "Result: ";
+      }
+    </script>
+  </body>
+</html>
