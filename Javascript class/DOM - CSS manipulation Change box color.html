@@ -1,0 +1,17 @@
+<style>
+  div {
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+  }
+</style>
+<div id="box"></div>
+<button onclick="change()">Change Color</button>
+<script>
+  var box = document.getElementById("box");
+  function change() {
+    box.style.backgroundColor = "red";
+  }
+</script>
