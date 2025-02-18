@@ -1,11 +1,12 @@
-<h1 id="h1" onclick="deleteElement()">One</h1>
+<h1 onclick="deleteElement(event)">One</h1>
+<h1 onclick="deleteElement(event)">Two</h1>
+<h1 onclick="deleteElement(event)">Three</h1>
+<h1 onclick="deleteElement(event)">Four</h1>
+<h1 onclick="deleteElement(event)">Five</h1>
 <!-- <button onclick="deleteElement()">Delete</button> -->
 
 <script>
-  var h1 = document.getElementById("h1"); // Corrected ID reference
-
-  function deleteElement() {
-    // Renamed function
-    h1.remove(); // Removes the <h1> element
+  function deleteElement(event) {
+    event.target.remove(); // Removes the <h1> element
   }
 </script>
