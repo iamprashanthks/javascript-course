@@ -1,0 +1,39 @@
+<h1 id="result">Name</h1>
+<button onclick="update(event)">Pendas</button>
+<button onclick="update(event)">Amma</button>
+<button onclick="update(event)">Mochi</button>
+
+<script>
+  var result = document.getElementById("result");
+
+  function update(event) {
+    result.textContent = event.target.textContent;
+    <!-- console.log(event); -->
+  }
+</script>
+
+<!-- This version is done by me -->
+<!-- <h1 id="result">Name</h1>
+<button id="pendas" onclick="pendasBtn()">Pendas</button>
+<button id="amma" onclick="ammaBtn()">Amma</button>
+<button id="monu" onclick="monuBtn()">Monu</button>
+
+<script>
+  //select what u want to manipulate
+  var result = document.getElementById("result");
+  var pendas = document.getElementById("pendas");
+  var amma = document.getElementById("amma");
+  var monu = document.getElementById("monu");
+
+  function pendasBtn() {
+    result.textContent = pendas.textContent;
+  }
+
+  function ammaBtn() {
+    result.textContent = amma.textContent;
+  }
+
+  function monuBtn() {
+    result.textContent = monu.textContent;
+  }
+</script> -->
