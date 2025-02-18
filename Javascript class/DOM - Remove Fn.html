@@ -1,0 +1,11 @@
+<h1 id="h1" onclick="deleteElement()">One</h1>
+<!-- <button onclick="deleteElement()">Delete</button> -->
+
+<script>
+  var h1 = document.getElementById("h1"); // Corrected ID reference
+
+  function deleteElement() {
+    // Renamed function
+    h1.remove(); // Removes the <h1> element
+  }
+</script>
