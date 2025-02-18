@@ -1,9 +1,10 @@
 <div id="box">
-  <h1>Hello</h1>
+  <p>Hello</p>
 </div>
 
 <script>
   var div = document.getElementById("box");
-  console.log(div.textContent);
-  console.log(div.innerHTML);
+
+  div.textContent = "<h1>This is just a code</h1>";
+  //div.innerHTML = "<h1>This is just a code</h1>";
 </script>
